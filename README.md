@@ -3,7 +3,7 @@
 Marketing site for FreshSpin Rentals — a washer & dryer rental service serving Fort Worth and the West Dallas area.
 
 ## Live Site
-- Live URL: [add after Vercel deploy]
+- Live URL: https://freshspin-rentals.vercel.app/
 
 ## Features
 - Homepage with service area and pricing overview
