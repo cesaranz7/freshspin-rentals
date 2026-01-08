@@ -1,3 +1,6 @@
+import Link from "next/link";
+
+
 export default function Home() {
   return (
     <main className="min-h-screen p-8 max-w-4xl mx-auto">
@@ -48,14 +51,12 @@ export default function Home() {
 
       {/* Apply CTA */}
       <section className="mb-12">
-        <a
-          href="https://m.me/your-page-username"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block bg-blue-600 text-white px-6 py-3 rounded-md text-lg font-semibold hover:bg-blue-700"
-        >
-          Contact via Facebook Messenger
-        </a>
+      <Link
+        href="/contact"
+        className="inline-block bg-blue-600 text-white px-6 py-3 rounded-md text-lg font-semibold hover:bg-blue-700"
+      >
+        Contact us on Facebook Messenger
+      </Link>
       </section>
 
       {/* Footer note */}
