@@ -1,10 +1,21 @@
 import Link from "next/link";
+import Image from "next/image";
+
 
 
 export default function Home() {
   return (
     <main className="min-h-screen p-8 max-w-4xl mx-auto">
       {/* Hero */}
+      <div className="relative h-[420px] w-full overflow-hidden rounded-2xl border bg-white shadow-sm">
+        <Image
+          src="/hero-top-loader.png"
+          alt="Top-load washer and dryer in a clean laundry room"
+          fill
+          className="object-cover"
+          priority
+        />
+      </div>
       <section className="mb-12">
         <h1 className="text-4xl font-bold mb-4">
           FreshSpin Rentals
@@ -51,12 +62,12 @@ export default function Home() {
 
       {/* Apply CTA */}
       <section className="mb-12">
-      <Link
-        href="/contact"
-        className="inline-block bg-blue-600 text-white px-6 py-3 rounded-md text-lg font-semibold hover:bg-blue-700"
-      >
-        Contact us on Facebook Messenger
-      </Link>
+        <Link
+          href="/contact"
+          className="inline-block bg-blue-600 text-white px-6 py-3 rounded-md text-lg font-semibold hover:bg-blue-700"
+        >
+          Contact us on Facebook Messenger
+        </Link>
       </section>
 
       {/* Footer note */}
